@@ -132,6 +132,35 @@ footer p {
 .characters > div {
   padding: 30px;
 }
+
+.characters > div.house-gryffindor:hover img {
+  border-color: var(--red);
+}
+.characters > div.house-gryffindor:hover p {
+  color: var(--red);
+}
+
+.characters > div.house-slytherin:hover img {
+  border-color: var(--green);
+}
+.characters > div.house-slytherin:hover p {
+  color: var(--green);
+}
+
+.characters > div.house-ravenclaw:hover img {
+  border-color: var(--blue);
+}
+.characters > div.house-ravenclaw:hover p {
+  color: var(--blue);
+}
+
+.characters > div.house-hufflepuff:hover img {
+  border-color: var(--yellow);
+}
+.characters > div.house-hufflepuff:hover p {
+  color: var(--yellow);
+}
+
 .characters img {
   width: 150px;
   height: 150px;
@@ -141,6 +170,7 @@ footer p {
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   object-fit: cover;
 }
+
 .characters p {
   text-align: center;
   color: var(--Gold, #b99049);
