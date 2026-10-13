@@ -115,9 +115,12 @@ footer p {
   height: 140px;
   text-align: center;
 }
-.houses > div:hover {
+
+.houses > div:hover,
+.houses > div.selected {
   background: #fff6e6;
 }
+
 .houses img {
   width: 121px;
   height: 136px;
@@ -268,5 +271,3 @@ footer p {
 }
 
 /*# sourceMappingURL=style.css.map */
-
-
