@@ -7,6 +7,7 @@ export class Character {
         this.dateOfBirth = data.dateOfBirth || "unknown";
         this.ancestry = data.ancestry || "unknown";
         this.patronus = data.patronus || "unknown";
+        this.alive = data.alive;
     }
 
     displayCard() {
@@ -21,10 +22,12 @@ export class Character {
         if (houseClass !== "") {
             div.classList.add(houseClass);
         }
-        
+
+        const isAliveClass = this.alive === false ? "grayscale" : "";
+
         div.innerHTML = `
             <a href="details.html?name=${this.name}">
-                <img src="${this.image}" alt="${this.name}" />
+                <img src="${this.image}" alt="${this.name}" class="${isAliveClass}" />
             </a>
             <p>${this.name}</p>
         `;
@@ -32,3 +35,4 @@ export class Character {
         return div;
     }
 }
+
