@@ -86,7 +86,8 @@ footer p {
   width: 100%;
   display: flex;
   align-items: center;
-  text-transform: uppercase;
+  justify-content: center;
+  /*text-transform: uppercase;*/
 }
 .header__left ul {
   display: flex;
@@ -193,7 +194,7 @@ footer p {
     width: 90%;
   }
   header h1,
-header ul {
+  header ul {
     display: none !important;
   }
   header .header__left {
